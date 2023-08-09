@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 16px;
+    gap: 16px;
+}
+
+.item {
+    height: 150px;
+    width: 80%;
+    background-color: rgb(67, 104, 91);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 32px;
+}
+
+.texto {
+    color: white;
+    font-size: 64px;
+}
+
+.forma {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(118, 143, 132);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.roxo {
+    background-color: rgb(99, 139, 139);
+}
+
+.circulo {
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.movimento {
+    -xpedu-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.girar {
+    border-radius: 25%;
+    -xpedu-transform: rotatez(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+
+.borda {
+    box-shadow: inset 0 0 0 10px rgb(164, 218, 235);
+}
+
+.lados {
+    animation: go-back 1s;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: .5s;
+    background-image: url(./img/jakehoon.jpg);
+    background-size: cover;
+}
+
+.sunghoon2 {
+    background-image: url(./img/jakehoon-gif.webp);
+    background-size: cover;
+}
+
+
+@keyframes go-back {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
